@@ -1,0 +1,11 @@
+channels:
+ - conda-forge
+ - bioconda
+ - default
+dependencies:
+ - freebayes=1.3.2
+ - samtools=1.12
+ - bcftools=1.12
+ - vcflib=1.0.2
+ - rbase=4.1.1
+ - tidyverse
