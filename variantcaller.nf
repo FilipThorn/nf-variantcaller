@@ -15,7 +15,7 @@ if (params.help) {
             –––––––––––––––––––––––––––––––––––––––
             'USAGE'
             
-            nextflow run variantcall.nf --bams /home/filip/Documents/nextflowpipes/varientcalls/data/'*_mem_merged_sorted.{bam,bam.bai}' --outdir /home/filip/Documents/nextflowpipes/varientcalls/results
+            nextflow run variantcaller.nf --bams /home/filip/Documents/nextflowpipes/varientcalls/data/'*_mem_merged_sorted.{bam,bam.bai}' --outdir /home/filip/Documents/nextflowpipes/varientcalls/results
 
 
             'Mandatory arguments:'
