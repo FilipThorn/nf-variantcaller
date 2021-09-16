@@ -4,7 +4,7 @@ Call variants from reference in parallel per chromsome with bam and bam.bai as i
 ## Workflow
 
 1) Install [`nextflow`](https://www.nextflow.io/) (version >= 19.04) \
-   Install [`Conda`](https://conda.io/miniconda.html) (version >= 4.10) \
+   Install [`Conda`](https://conda.io/miniconda.html) (version >= 4.10) 
 
 2) Download git clone of this repository:
    ```bash
