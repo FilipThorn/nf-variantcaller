@@ -15,6 +15,16 @@ Nextflow pipeline that calls variants from reference in parallel per chromsome w
     ref = "/PATH/TO/INDEXED/REFERENCE.fa"
     chr = "/PATH/TO/CHROMOSOME.list"
    ```
+   &nbsp;
+   ### Example of CHROMOSOME.list
+   &nbsp;
+   ```bash
+   chr1
+   chr2
+   chr3
+   chr6u
+   ```
+   
 4) Run vcfcaller workflow:
    ```bash
     nextflow run ./nf-variantcaller/variantcaller.nf --bams /PATH/TO/'Indivxxx.{bam,bam.bai}' --outdir PATH/TO/OUTDIR/
