@@ -61,7 +61,7 @@ chr_list = file(params.chr).readLines()
 
 process Variantcall {
 
-    tag "$sample_id"
+    tag "${chr};${sample_id}"
 
     publishDir "${params.outdir}/$sample_id", mode:'copy'
 
