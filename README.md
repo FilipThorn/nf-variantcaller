@@ -24,9 +24,9 @@ Nextflow pipeline that calls variants from reference in parallel per chromsome w
 &nbsp;
 
 #Plot examples 
-![plot](./example_plots/Indivxxx_depth.png| width=100)
+![plot](./example_plots/Indivxxx_depth.png | width=100)
 
-![plot](./example_plots/Indivxxx_quality.png| width=100)
+![plot](./example_plots/Indivxxx_quality.png | width=100)
 
 ## HPC enviroment
 Use of a HPC is recomended. Create a nextflow config profile that matches your cluster set-up [`profile`]( https://www.nextflow.io/docs/latest/config.html#config-profiles)
