@@ -42,7 +42,7 @@ if (params.help) {
 
 log.info """\
          –––––––––––––––––––––––––––––––––––––––
-         Mitomania 
+         VariantCaller 
          NEXTFLOW   P I P E L I N E                
          –––––––––––––––––––––––––––––––––––––––
          outdir       : ${params.outdir}
