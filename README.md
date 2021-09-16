@@ -16,8 +16,7 @@ Nextflow pipeline that calls variants from reference in parallel per chromsome w
     chr = "/PATH/TO/CHROMOSOME.list"
    ```
    &nbsp;
-   ### Example of CHROMOSOME.list
-   &nbsp;
+   **Example of CHROMOSOME.list**
    ```bash
    chr1
    chr2
