@@ -132,7 +132,7 @@ process plot {
     tuple val(sample_id), file(qual), file(depth) from subset_ch
 
     output:
-    file("${sample_id}_subset.*") 
+    file("*.png") 
 
     script:
     """
