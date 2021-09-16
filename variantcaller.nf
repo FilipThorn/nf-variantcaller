@@ -114,7 +114,7 @@ process Subset {
     script:
     """
     vcfrandomsample -r 0.01  $vcf > ${sample_id}_subset.vcf
-    bgzip _${sample_id}_subset.vcf
+    bgzip ${sample_id}_subset.vcf
     bcftools index ${sample_id}_subset.vcf.gz
 
     vcftools --gzvcf ${sample_id}_subset.vcf.gz --site-mean-depth --out ${sample_id}_subset
@@ -145,9 +145,9 @@ process plot {
            col_names = c("chr", "pos", "mean_depth", "var_depth"), skip = 1)
 
 
-    a <- ggplot(var_qual, aes(qual)) + geom_density(fill = "pink", colour = "red", alpha = 0.3) + theme_light() + labs(title = "Indivxxx quality subset 10% variants")
+    a <- ggplot(var_qual, aes(qual)) + geom_density(fill = "pink", colour = "red", alpha = 0.3) + theme_light() + labs(title = "${sample_id} quality subset 10% variants")
 
-    b <- ggplot(var_depth, aes(mean_depth)) + geom_density(fill = "pink", colour = "red", alpha = 0.3) + theme_light() + labs(title = "Indivxxx depth subset 10% variants")
+    b <- ggplot(var_depth, aes(mean_depth)) + geom_density(fill = "pink", colour = "red", alpha = 0.3) + theme_light() + labs(title = "${sample_id} depth subset 10% variants")
 
     plot(a)   
    
