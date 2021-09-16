@@ -10,7 +10,7 @@ if (params.help) {
             | |````   | |
             | |ilip   | |hörn     
             –––––––––––––––––––––––––––––––––––––––
-            Mitomania
+            VariantCaller
             NEXTFLOW   P I P E L I N E                
             –––––––––––––––––––––––––––––––––––––––
             'USAGE'
