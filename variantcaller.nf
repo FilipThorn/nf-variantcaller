@@ -15,11 +15,12 @@ if (params.help) {
             –––––––––––––––––––––––––––––––––––––––
             'USAGE'
             
-            nextflow run variantcaller.nf --bams /home/filip/Documents/nextflowpipes/varientcalls/data/'*_mem_merged_sorted.{bam,bam.bai}' --outdir /home/filip/Documents/nextflowpipes/varientcalls/results
+            nextflow run variantcaller.nf --bams /PATH/TO/'*.{bam,bam.bai}' --outdir /PATH/TO/OUTDIR/
 
 
             'Mandatory arguments:'
             --outdir                 Path to output directory
+            --bams                   Path to bamfile and indexed bamfile pairs
             
             'OPTIONS'
             --help                   Outputs this help log      
