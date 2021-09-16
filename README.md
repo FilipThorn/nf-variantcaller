@@ -24,7 +24,9 @@ Nextflow pipeline that calls variants from reference in parallel per chromsome w
 &nbsp;
 
 #Plot examples 
-![plot](./example_plots/Indivxxx_depth.png | width=100)
+&nbsp;
+
+![plot](./example_plots/Indivxxx_depth.png =250x250)
 
 ![plot](./example_plots/Indivxxx_quality.png | width=100)
 
