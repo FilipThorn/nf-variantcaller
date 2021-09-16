@@ -137,6 +137,11 @@ process plot {
     script:
     """
     #!/usr/bin/env Rscript 
+    
+    library(ggplot2)
+    library(dplyr)
+    library(readr)
+
 
     var_qual <- read_delim( "${qual}", delim = "\t",
            col_names = c("chr", "pos", "qual"), skip = 1)
