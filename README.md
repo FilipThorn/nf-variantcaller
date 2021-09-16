@@ -17,7 +17,7 @@ Nextflow pipeline that calls variants from reference in parallel per chromsome w
    ```
 4) Run vcfcaller workflow:
    ```bash
-    nextflow run variantcaller.nf --bams /PATH/TO/'*.{bam,bam.bai}' --outdir PATH/TO/OUTDIR/
+    nextflow run variantcaller.nf --bams /PATH/TO/'Indivxxx.{bam,bam.bai}' --outdir PATH/TO/OUTDIR/
    ```
 &nbsp;
 &nbsp;
