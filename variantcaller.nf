@@ -150,9 +150,9 @@ process plot {
            col_names = c("chr", "pos", "mean_depth", "var_depth"), skip = 1)
 
 
-    a <- ggplot(var_qual, aes(qual)) + geom_density(fill = "pink", colour = "red", alpha = 0.3) + theme_light() + labs(title = "${sample_id} quality subset 10% variants")
+    a <- ggplot(var_qual, aes(qual)) + geom_density(fill = "pink", colour = "red", alpha = 0.3) + theme_light() + labs(title = "${sample_id} quality subset 10% variants") + xlim(0,500)
 
-    b <- ggplot(var_depth, aes(mean_depth)) + geom_density(fill = "pink", colour = "red", alpha = 0.3) + theme_light() + labs(title = "${sample_id} depth subset 10% variants")
+    b <- ggplot(var_depth, aes(mean_depth)) + geom_density(fill = "pink", colour = "red", alpha = 0.3) + theme_light() + labs(title = "${sample_id} depth subset 10% variants") + xlim(0,500)
 
     plot(a)   
    
