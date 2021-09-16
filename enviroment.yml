@@ -7,5 +7,5 @@ dependencies:
  - samtools=1.12
  - bcftools=1.12
  - vcflib=1.0.2
- - rbase=4.1.1
- - tidyverse
+ - r=4.1
+ - r-base=4.1.1
