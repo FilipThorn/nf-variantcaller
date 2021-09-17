@@ -90,13 +90,35 @@ process merge_vcf{
 
     output:
     tuple val(sample_id), file("${sample_id}.vcf") into merge_ch
-    file("${sample_id}.stats")    
 
     script:
     """
     bcftools concat -o ${sample_id}.vcf $chrs
-    vcfstats ${sample_id}.vcf > ${sample_id}.stats
+
     """
+}
+
+merge_ch.into { merge_ch2; stats_ch }
+
+process Stats {
+	
+	publishDir "${params.outdir}/$sample_id/stats/", mode:'copy'
+
+    tag "$sample_id"
+
+    input:
+    tuple val(sample_id), file(vcf) from stats_ch
+
+    output:
+    file("*")
+
+    script:
+    """
+    vcfstats $vcf > ${sample_id}_vcfstats.stats
+
+    Variants_summary.sh $vcf ${sample_id}_variants.txt ${sample_id}_trans.txt
+    """
+
 }
 
 process Subset {
