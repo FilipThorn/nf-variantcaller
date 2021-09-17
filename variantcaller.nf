@@ -128,7 +128,7 @@ process Subset {
     tag "$sample_id"
 
     input:
-    tuple val(sample_id), file(vcf) from merge_ch
+    tuple val(sample_id), file(vcf) from merge_ch2
 
     output:
     tuple val(sample_id), file("${sample_id}_subset.lqual"), file("${sample_id}_subset.ldepth.mean") into subset_ch
